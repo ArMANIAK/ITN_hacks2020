@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Statistics from './components/Statistics/Statistics';
+import Tester from './components/Tester/Tester';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="nav-bar">
+          <a className="logo" href="https://bazait.com" title="BazaIT"><img src={ require("./assets/BazaIT.svg") } alt="BazaIT logo"/></a>
+          <nav>
+            <ul>
+              <li>Компанії</li>
+              <li>Вакансії</li>
+              <li>Новини</li>
+            </ul>
+          </nav>
+          <button><span></span>UserName</button>
+        </div>
       </header>
+      <Statistics />
+      <Tester />
     </div>
   );
 }
