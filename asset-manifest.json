@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ITN_hacks2020/static/css/main.5968ef5a.chunk.css",
+    "main.js": "/ITN_hacks2020/static/js/main.cef5f4c6.chunk.js",
+    "main.js.map": "/ITN_hacks2020/static/js/main.cef5f4c6.chunk.js.map",
+    "runtime-main.js": "/ITN_hacks2020/static/js/runtime-main.1d954994.js",
+    "runtime-main.js.map": "/ITN_hacks2020/static/js/runtime-main.1d954994.js.map",
+    "static/js/2.fee08d3f.chunk.js": "/ITN_hacks2020/static/js/2.fee08d3f.chunk.js",
+    "static/js/2.fee08d3f.chunk.js.map": "/ITN_hacks2020/static/js/2.fee08d3f.chunk.js.map",
+    "index.html": "/ITN_hacks2020/index.html",
+    "precache-manifest.c8138ccc4b5151e5a47ad5c178d4a4d1.js": "/ITN_hacks2020/precache-manifest.c8138ccc4b5151e5a47ad5c178d4a4d1.js",
+    "service-worker.js": "/ITN_hacks2020/service-worker.js",
+    "static/css/main.5968ef5a.chunk.css.map": "/ITN_hacks2020/static/css/main.5968ef5a.chunk.css.map",
+    "static/js/2.fee08d3f.chunk.js.LICENSE.txt": "/ITN_hacks2020/static/js/2.fee08d3f.chunk.js.LICENSE.txt",
+    "static/media/BazaIT.svg": "/ITN_hacks2020/static/media/BazaIT.304e5212.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d954994.js",
+    "static/js/2.fee08d3f.chunk.js",
+    "static/css/main.5968ef5a.chunk.css",
+    "static/js/main.cef5f4c6.chunk.js"
+  ]
+}
