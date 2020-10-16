@@ -1,0 +1,38 @@
+nav > ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul li {
+    margin-right: 35px;
+}
+
+nav > ul a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+nav > ul a:hover {
+    background-color:#FDD835;
+    color: white;
+}
+
+nav > ul li:last-child {
+    margin-right: 0;
+}
+
+.profile-tab {
+    display: flex;
+    padding: 40px;
+}
+
+.profile-tab > nav > ul {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+
+.profile-tab > nav li {
+    margin-bottom: 75px;
+}

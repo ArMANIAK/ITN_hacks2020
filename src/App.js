@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Statistics from './components/Statistics/Statistics';
-import Tester from './components/Tester/Tester';
+import Profile from './components/Profile/Profile';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,8 +19,7 @@ function App() {
           <button><span></span>UserName</button>
         </div>
       </header>
-      <Statistics />
-      <Tester />
+      <Profile />
     </div>
   );
 }
