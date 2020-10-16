@@ -8,13 +8,17 @@ const Graphic = ( {title, stats} ) => {
 
     const drawGraphic = (data, canvas, { width, height, padding, type }) => {
 
+        canvas.clearRect(0, 0, width, height);
+        canvas.fillRect(padding * 2, padding, width - padding * 3, height - padding * 2);
+        canvas.clearRect(padding * 2 + 1, padding, width - padding * 3, height -  padding * 2 - 1);
+
         // preliminary calculations
         const offset = 3
         const segments = data.length + 1;
-        const segmentWidth = Math.floor((width - padding * 2 - offset) / segments);
-        const min = data.reduce((min, current) => min = current[1] < min ? current[1] : min, Infinity)  - offset;
+        const segmentWidth = (width - padding * 2 - offset) / segments;
+        const min = data.reduce((min, current) => min = current[1] < min ? current[1] : min, Infinity);
         const max = data.reduce((max, current) => max = current[1] > max ? current[1] : max, -Infinity);
-        const segmentHeight = Math.floor((height - padding - offset * 2) / (max - min));
+        const segmentHeight = (height - padding - offset * 2 ) / (max - min);
         
         switch (type) {
 
@@ -24,7 +28,7 @@ const Graphic = ( {title, stats} ) => {
                 canvas.moveTo(padding * 2 + offset, height - segmentHeight * (data[0][1] - min) - padding - offset);
                 for (let i = 1, n = data.length; i < n; i++) {
                     canvas.lineTo(segmentWidth * (i + 1), height - segmentHeight * (data[i][1] - min) - padding - offset);
-                    canvas.fillText(data[i][1], padding * 2 - 15, height - segmentHeight * (data[i][1] - min) - padding - offset)
+                    canvas.fillText(data[i][1], padding * 2 - 25, height - segmentHeight * (data[i][1] - min) - padding - offset);
                 }
                 canvas.stroke();    
             break;
@@ -42,6 +46,8 @@ const Graphic = ( {title, stats} ) => {
                                     height - segmentHeight * (data[i][1] - min) - padding - offset, 
                                     segmentWidth, 
                                     segmentHeight * (data[i][1] - min));
+                    canvas.fillStyle = 'black';
+                    canvas.fillText(data[i][1], padding * 2 - 25, height - segmentHeight * (data[i][1] - min) - padding - offset);
                 }
             break;
         }
@@ -52,9 +58,8 @@ const Graphic = ( {title, stats} ) => {
         const height = canvasRef.current.scrollHeight;
         const canvas = canvasRef.current.getContext('2d');
         let padding = 20;
-        canvas.fillRect(padding * 2, padding, width - padding * 3, height - padding * 2);
-        canvas.clearRect(padding * 2 + 1, padding, width - padding * 3, height -  padding * 2 - 1);
-        let type = 'polyline';
+        let type = 'bar';
+
         drawGraphic(stats, canvas, {width, height, padding, type})
     })
 
