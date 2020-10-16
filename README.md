@@ -11,4 +11,4 @@ Team members:
 Presentation - https://drive.google.com/file/d/1VWoikTtYGDu4DevufN991OKonYQnDwpA/view?usp=sharing
 Miro-board for project - https://miro.com/app/board/o9J_kiPupd0=/
 GH Pages - https://armaniak.github.io/ITN_hacks2020/
-Test-cases - https://docs.google.com/spreadsheets/d/1bSrpmXaxQ5kNCz-f-f17eCZf4cd0eGwxmpp3sZGTKeY/edit?usp=sharing
+Checklist - https://docs.google.com/spreadsheets/d/1bSrpmXaxQ5kNCz-f-f17eCZf4cd0eGwxmpp3sZGTKeY/edit?usp=sharing
