@@ -120,6 +120,9 @@ const Profile = () => {
                         </nav>
                         <div class="graphic">
                         <div style={{ width: '100%', height: '40vh' }}>
+                            <h3 className="graphic-header">
+                                { stats.capture }
+                            </h3>
                             <ResponsiveContainer>
                                 <AreaChart
                                     data={stats.data}

@@ -33,6 +33,7 @@ section.section > * {
 } 
 
 .section-nav > ul {
+    list-style: none;
     display: flex;
     justify-content: space-around;
     padding: 30px;
@@ -83,6 +84,12 @@ main.container {
     color: #757575;
     text-align: left;
     border: none;
+}
+
+.graphic-header {
+    margin-top: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
 }
 
 .aside-ul > .aside-li > .aside-li-text:focus {
