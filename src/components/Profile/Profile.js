@@ -1,15 +1,14 @@
-import React, { useState, PureComponent } from 'react';
+import React, { useState } from 'react';
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from 'recharts';
 import './Profile.css';
-import Statistics from '../Statistics/Statistics';
 import Tester from '../Tester/Tester';
 
 const Profile = () => {
 
-    const [stats, setStats] = useState({ 
-        caption: 'Vacancies per date',
+    const [stats, setStats] = useState({
+        capture: "Нових вакансій",
         data: [
             { axisX: '2020-09-15', axisY: 35 },
             { axisX: '2020-09-18', axisY: 5 },
@@ -24,9 +23,9 @@ const Profile = () => {
 
   // stats is a mock-up for real data which is fetched from API or DB and might be initialized within backend code
 
-  const vacancies = { 
-        caption: 'Vacancies per date',
-        data: [
+  const vacancies = {
+    capture: "Нових вакансій",
+    data: [
             { axisX: '2020-09-15', axisY: 35 },
             { axisX: '2020-09-18', axisY: 5 },
             { axisX: '2020-09-19', axisY: 15 },
@@ -39,7 +38,7 @@ const Profile = () => {
         ]};
 
     const geography = {
-        caption: 'Geography',
+        capture: "Географія вакансій",
         data: [
             { axisX: 'Lutsk', axisY: 10 },
             { axisX: 'Dnipro', axisY: 35 },
@@ -51,7 +50,7 @@ const Profile = () => {
         ]};
 
     const averageSalary = {
-        caption: 'Average Salary',
+        capture: "Сeредня заробітна плата",
         data: [
             {axisX: '2020-01', axisY: 15000 },
             {axisX: '2020-02', axisY: 14200 },
@@ -65,7 +64,7 @@ const Profile = () => {
         ]};
 
     const activeUsers = {
-        caption: 'Active Users',
+        capture: "Активних користувачів",
         data: [
             { axisX: '2020-09-15', axisY: 25 },
             { axisX: '2020-09-18', axisY: 17 },
@@ -76,8 +75,7 @@ const Profile = () => {
             { axisX: '2020-09-25', axisY: 24 },
             { axisX: '2020-10-15', axisY: 15 },
             { axisX: '2020-10-25', axisY: 27 },
-        ]
-    }
+        ]};
   
     return (
         <div className="profile">
@@ -101,7 +99,7 @@ const Profile = () => {
                                 <button class="aside-li-text" onClick = {() => setStats(geography)}>Географія вакансій</button>
                             </li>
                             <li class="aside-li">
-                                <button class="aside-li-text" onClick = {() => setStats(averageSalary)}>Средня заробітна плата</button>
+                                <button class="aside-li-text" onClick = {() => setStats(averageSalary)}>Сeредня заробітна плата</button>
                             </li>
                             <li class="aside-li">
                                 <button class="aside-li-text" onClick = {() => setStats(activeUsers)}>Активних користувачів</button>
@@ -121,20 +119,22 @@ const Profile = () => {
                             <input type="date" name="date" id="date"/>
                         </nav>
                         <div class="graphic">
-                        <ResponsiveContainer>
-                            <AreaChart
-                                data={stats}
-                                margin={{
-                                top: 10, right: 30, left: 0, bottom: 0,
-                                }}
-                            >
-                                <CartesianGrid strokeDasharray="3 3" />
-                                <XAxis dataKey="data.axisX" />
-                                <YAxis />
-                                <Tooltip />
-                                <Area type="monotone" dataKey="data.axiY" stroke="#8884d8" fill="#8884d8" />
-                            </AreaChart>
-                        </ResponsiveContainer>
+                        <div style={{ width: '100%', height: '40vh' }}>
+                            <ResponsiveContainer>
+                                <AreaChart
+                                    data={stats.data}
+                                    margin={{
+                                    top: 30, right: 30, left: 0, bottom: 0,
+                                    }}
+                                >
+                                    <CartesianGrid strokeDasharray="3 3" />
+                                    <XAxis dataKey="axisX" />
+                                    <YAxis />
+                                    <Tooltip />
+                                    <Area type="monotone" dataKey="axisY" stroke="#8884d8" fill="#8884d8" />
+                                </AreaChart>
+                            </ResponsiveContainer>
+                            </div>
                         </div>
                     </main>
                 </main>
