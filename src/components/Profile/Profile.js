@@ -1,4 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState, PureComponent } from 'react';
+import {
+  AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
+} from 'recharts';
 import './Profile.css';
 import Statistics from '../Statistics/Statistics';
 import Tester from '../Tester/Tester';
@@ -6,68 +9,73 @@ import Tester from '../Tester/Tester';
 const Profile = () => {
 
     const [stats, setStats] = useState({ 
-        'Vacancies per date': [
-            ['2020-09-15', 35],
-            ['2020-09-18', 5],
-            ['2020-09-19', 15],
-            ['2020-09-21', 15],
-            ['2020-09-22', 25],
-            ['2020-09-23', 5],
-            ['2020-09-25', 35],
-            ['2020-10-15', 0],
-            ['2020-10-25', 10],
+        caption: 'Vacancies per date',
+        data: [
+            { axisX: '2020-09-15', axisY: 35 },
+            { axisX: '2020-09-18', axisY: 5 },
+            { axisX: '2020-09-19', axisY: 15 },
+            { axisX: '2020-09-21', axisY: 15 },
+            { axisX: '2020-09-22', axisY: 25 },
+            { axisX: '2020-09-23', axisY: 5 },
+            { axisX: '2020-09-25', axisY: 35 },
+            { axisX: '2020-10-15', axisY: 0 },
+            { axisX: '2020-10-25', axisY: 10 },
         ]})
 
   // stats is a mock-up for real data which is fetched from API or DB and might be initialized within backend code
 
   const vacancies = { 
-        'Vacancies per date': [
-            ['2020-09-15', 35],
-            ['2020-09-18', 5],
-            ['2020-09-19', 15],
-            ['2020-09-21', 15],
-            ['2020-09-22', 25],
-            ['2020-09-23', 5],
-            ['2020-09-25', 35],
-            ['2020-10-15', 0],
-            ['2020-10-25', 10],
+        caption: 'Vacancies per date',
+        data: [
+            { axisX: '2020-09-15', axisY: 35 },
+            { axisX: '2020-09-18', axisY: 5 },
+            { axisX: '2020-09-19', axisY: 15 },
+            { axisX: '2020-09-21', axisY: 15 },
+            { axisX: '2020-09-22', axisY: 25 },
+            { axisX: '2020-09-23', axisY: 5 },
+            { axisX: '2020-09-25', axisY: 35 },
+            { axisX: '2020-10-15', axisY: 0 },
+            { axisX: '2020-10-25', axisY: 10 },
         ]};
 
     const geography = {
-        'Geography': [
-            ['Lutsk', 10],
-            ['Dnipro', 35],
-            ['Lviv', 44],
-            ['Kyiv', 54],
-            ['Kharkiv', 30],
-            ['Chernihiv', 15],
-            ['Zaporizhzhia', 11],
+        caption: 'Geography',
+        data: [
+            { axisX: 'Lutsk', axisY: 10 },
+            { axisX: 'Dnipro', axisY: 35 },
+            { axisX: 'Lviv', axisY: 44 },
+            { axisX: 'Kyiv', axisY: 54 },
+            { axisX: 'Kharkiv', axisY: 30 },
+            { axisX: 'Chernihiv', axisY: 15 },
+            { axisX: 'Zaporizhzhia', axisY: 11 },
         ]};
 
     const averageSalary = {
-        'Average Salary': [
-            ['2020-01', 15000],
-            ['2020-02', 14200],
-            ['2020-03', 12000],
-            ['2020-04', 13000],
-            ['2020-05', 14000],
-            ['2020-06', 15000],
-            ['2020-07', 15000],
-            ['2020-08', 17000],
-            ['2020-09', 19000],
+        caption: 'Average Salary',
+        data: [
+            {axisX: '2020-01', axisY: 15000 },
+            {axisX: '2020-02', axisY: 14200 },
+            {axisX: '2020-03', axisY: 12000 },
+            {axisX: '2020-04', axisY: 13000 },
+            {axisX: '2020-05', axisY: 14000 },
+            {axisX: '2020-06', axisY: 15000 },
+            {axisX: '2020-07', axisY: 15000 },
+            {axisX: '2020-08', axisY: 17000 },
+            {axisX: '2020-09', axisY: 19000 },
         ]};
 
     const activeUsers = {
-        'Active Users': [
-            ['2020-09-15', 25],
-            ['2020-09-18', 17],
-            ['2020-09-19', 23],
-            ['2020-09-21', 20],
-            ['2020-09-22', 8],
-            ['2020-09-23', 22],
-            ['2020-09-25', 24],
-            ['2020-10-15', 15],
-            ['2020-10-25', 27],
+        caption: 'Active Users',
+        data: [
+            { axisX: '2020-09-15', axisY: 25 },
+            { axisX: '2020-09-18', axisY: 17 },
+            { axisX: '2020-09-19', axisY: 23 },
+            { axisX: '2020-09-21', axisY: 20 },
+            { axisX: '2020-09-22', axisY: 8 },
+            { axisX: '2020-09-23', axisY: 22 },
+            { axisX: '2020-09-25', axisY: 24 },
+            { axisX: '2020-10-15', axisY: 15 },
+            { axisX: '2020-10-25', axisY: 27 },
         ]
     }
   
@@ -113,7 +121,20 @@ const Profile = () => {
                             <input type="date" name="date" id="date"/>
                         </nav>
                         <div class="graphic">
-                            <Statistics stats={stats}/>
+                        <ResponsiveContainer>
+                            <AreaChart
+                                data={stats}
+                                margin={{
+                                top: 10, right: 30, left: 0, bottom: 0,
+                                }}
+                            >
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <XAxis dataKey="data.axisX" />
+                                <YAxis />
+                                <Tooltip />
+                                <Area type="monotone" dataKey="data.axiY" stroke="#8884d8" fill="#8884d8" />
+                            </AreaChart>
+                        </ResponsiveContainer>
                         </div>
                     </main>
                 </main>
