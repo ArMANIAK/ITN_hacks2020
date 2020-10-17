@@ -12,7 +12,7 @@ function App() {
           <nav>
             <ul>
               <li>Компанії</li>
-              <li>Вакансії</li>
+              <li className="active">Вакансії</li>
               <li>Новини</li>
             </ul>
           </nav>
