@@ -56,6 +56,25 @@ const Profile = () => {
             ['2020-08', 17000],
             ['2020-09', 19000],
         ]};
+
+    const metricGroups = {
+        'Platform': [
+            'New vacancies',
+            'Geography',
+            'Average Salary',
+            'Certified users',
+            'Active users'
+        ],
+        'Profile': [
+            'sameUsers',
+            'keywordsSearch',
+            'openedRelativeVacancies',
+        ],
+        'Employer': [
+            'Regularity of opening vacancies',
+            'Answer Ratio',
+        ]
+    }
   
     return (
         <div className="profile">
