@@ -21,12 +21,13 @@ div.nav-bar img {
   display: flex;
 }
 
-ul > li {
+.App-header > .nav-bar > nav > ul > li {
   display: block;
   text-decoration: none;
   list-style: none;
   font-weight: bold;
   margin-right: 15px;
+  padding: 22px;
 }
 
 ul > li:last-child {
