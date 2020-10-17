@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ITN_hacks2020/precache-manifest.cf183574525e17ff167241bd9e67647f.js"
+  "/ITN_hacks2020/precache-manifest.1a936df4db9cfd623d2cdd908d484d78.js"
 );
 
 self.addEventListener('message', (event) => {
