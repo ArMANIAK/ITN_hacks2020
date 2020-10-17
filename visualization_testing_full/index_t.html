@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baza IT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav-bar">
+            <ul class="nav-bar-ul">
+                <li class="nav-bar-li">
+                    <img class="nav-bar-img" src="image/BazaIT.svg" alt="logo" >
+                </li>
+                <li class="nav-bar-li">
+                    <a href="#" class="nav-bar-li-link">
+                        <p class="li-text">Компании</p>
+                    </a>
+                </li>
+                <li class="nav-bar-li">
+                    <a href="#" class="nav-bar-li-link">
+                        <p class="li-text">Вакансии</p>
+                    </a>
+                </li>
+                <li class="nav-bar-li">
+                    <a href="#" class="nav-bar-li-link">
+                        <p class="li-text">Новости</p>
+                    </a>
+                </li>
+                <li class="nav-bar-li">
+                    <input type="text" name="username" id="username" value="login@gmail.com">
+                </li>
+            </ul>
+        </nav>
+        <section class="container">
+            <div class="title">
+                <h1 class="container-title">Проверка знаний / Тестирование</h1>
+            </div>
+            <div class="container-test">
+
+                <div class="test-question">
+                    <p class="question-title">Вопрос :    5/20</p>
+                    <textarea class="question-text" name="question-text" id="question-text" cols="30" rows="10">
+                        Результат выполнения следующего кода? border: 1px solid black
+                    </textarea>
+                </div>
+
+                <div class="test-answer">
+                    <p class="answer-title">Варианты ответов:</p>
+                    
+                    <label class="answer-label" for="">
+                        <input class="answer-input" type="radio" name="" id="" value="" checked>
+                        <span>Рамка со всех сторон (черная, сплошной, 1px)</span>
+                    </label>
+                    
+                    <label class="answer-label" for="">
+                        <input class="answer-input" type="radio" name="" id="" value="">
+                        <span>Рамка справа(красная, сплошной, 2px)</span>
+                    </label>
+                    
+                    <label class="answer-label" for="">
+                        <input class="answer-input" type="radio" name="" id="" value="">
+                        <span>Рамка снизу(синяя, сплошной, 1px)</span>
+                    </label>
+                    
+                    <label class="answer-label" for="">
+                        <input class="answer-input" type="radio" name="" id="" value="">
+                        <span>Рамка сверху(черная, сплошной, 1px)</span>
+                    </label>
+
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer-text">Остаток времени :</p>
+            <input class="time" type="time" name="time" id="time" value="00:20">
+            <button class="btn-prev"><i class="fas fa-chevron-left"></i> Предыдущий</button>
+            <button class="btn-next">Следующий вопрос <i class="fas fa-chevron-right"></i></button>
+        </footer>
+    </div>
+</body>
+</html>
