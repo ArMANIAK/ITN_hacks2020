@@ -1,9 +1,44 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import './Profile.css';
 import Statistics from '../Statistics/Statistics';
 import Tester from '../Tester/Tester';
+import React, { PureComponent } from 'react';
+import {
+  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+} from 'recharts';
 
 const Profile = () => {
+
+    
+    const data = [
+        {
+          name: '2020-09-15', first: 35, progress: 0, amt: 0,
+        },
+        {
+          name: '2020-09-18', first: 35, progress: -30, amt: 0,
+        },
+        {
+          name: '2020-09-19', first: 35, progress: -20, amt: 0,
+        },
+        {
+          name: '2020-09-21', first: 35, progress: -20, amt: 0,
+        },
+        {
+          name: '2020-09-22', first: 35, progress: -10, amt: 0,
+        },
+        {
+          name: '2020-09-23', first: 35, progress: -30, amt: 0,
+        },
+        {
+          name: '2020-09-25', first: 35, progress: 0, amt: 0,
+        },
+        {
+          name: '2020-10-15', first: 35, progress: -35, amt: 0,
+        },
+        {
+          name: '2020-10-15', first: 35, progress: -25, amt: 0,
+        },
+      ];
 
     const [stats, setStats] = useState({ 
         'Vacancies per date': [
@@ -17,6 +52,7 @@ const Profile = () => {
             ['2020-10-15', 0],
             ['2020-10-25', 10],
         ]})
+
 
   // stats is a mock-up for real data which is fetched from API or DB and might be initialized within backend code
 
@@ -75,7 +111,25 @@ const Profile = () => {
                         <li className="active"><button onClick = {() => setStats(averageSalary)}>Average Salary</button></li>
                     </ul>
                 </nav>
-                <Statistics stats={stats}/>
+                
+                <BarChart
+                width={900}
+                height={400}
+                data={data}
+                margin={{
+                  top: 20, right: 30, left: 200, bottom: 5,
+                }}
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="first" stackId="a" fill="#8884d8" />
+                <Bar dataKey="progress" stackId="a" fill="#82ca9d" />
+                </BarChart>
+
+               
             </div>
             <Tester />
         </div>
