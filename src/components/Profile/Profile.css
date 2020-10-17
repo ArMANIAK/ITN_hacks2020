@@ -1,38 +1,109 @@
-nav > ul {
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    color: black;
+}
+
+.nav-bar > nav {
+    width: 50%;
+}
+
+.nav-bar > nav > ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-nav > ul li {
-    margin-right: 35px;
+.nav-bar > nav > ul > li.active {
+    background-color: #feeb9a;
 }
 
-nav > ul a {
-    padding: 10px 15px;
-    text-decoration: none;
+/* Wrapper */
+.wrapper {
+    max-width: 1200px;
+}
+
+section.section > * {
+    margin: 20px 70px;
+}
+
+.section-title {
+    margin: 50px 0px 20px;
+    border-bottom: 2px solid #000;
+} 
+
+.section-nav > ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.section-nav li {
+    color: #757575;
+}
+
+.section-nav li:hover, .section-nav li.active {
     color: #000;
+    font-weight: bold;
 }
 
-nav > ul a:hover {
-    background-color:#FDD835;
-    color: white;
+main.section {
+    width: 75%;
 }
-
-nav > ul li:last-child {
-    margin-right: 0;
-}
-
-.profile-tab {
+main.section > .section-nav {
     display: flex;
-    padding: 40px;
-}
-
-.profile-tab > nav > ul {
-    flex-direction: column;
     justify-content: space-between;
-    padding-left: 0px;
 }
 
-.profile-tab > nav li {
-    margin-bottom: 75px;
+main.container {
+    margin: 0 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside-ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.aside-li {
+    color: #757575;
+}
+
+.aside button {
+    margin: 0;
+    background-color: #fff;
+    color: #757575;
+    text-align: left;
+    border: none;
+}
+
+.aside-ul > .aside-li > .aside-li-text:focus {
+    border:none;
+}
+
+.aside button:hover {
+    color: #000000;
+    border: none;
+    font-weight: bold;
+}
+
+section ul.nav-profile {
+    padding: 8px 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-profile-item {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding: 0;
+}
+
+.nav-profile-item:hover {
+    font-weight: 700;
 }
