@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Profile from './components/Profile/Profile';
+import Tester from './components/Tester/Tester';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         </div>
       </header>
       <Profile />
+      <Tester />
     </div>
   );
 }
