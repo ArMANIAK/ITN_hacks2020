@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './Tester.css';
 import Quiz from '../Quiz/Quiz';
 import Task from '../Task/Task';
@@ -48,6 +48,22 @@ const Tester = () => {
         },
     ];
 
+    const mixArray = arr => {
+        let newArr = arr.slice();
+        for (let i = 0; i < newArr.length; i++) {
+            let temp = newArr[i];
+            let randomIndex = Math.floor(Math.random() * newArr.length);
+            newArr[i] = newArr[randomIndex];
+            newArr[randomIndex] = temp;
+        }
+        return newArr;
+    }
+
+    const tests = mixArray(testCases.reduce((acc, el) => {
+        acc.push({question: el.question, topic: el.group, answers: mixArray([el.rightAnswer, el.wrongAnswer1, el.wrongAnswer2, el.wrongAnswer3])});
+        return acc;
+    }, []));
+
     const [testInProgress, setTestInProgress] = useState(false);
 
     return (
@@ -55,7 +71,7 @@ const Tester = () => {
             {
                 !testInProgress ?
                     <Task /> :  
-                    <Quiz testCases={testCases} />
+                    <Quiz testCases={testCases} tests={tests} />
             }
             <button onClick={() => setTestInProgress(true)}>Робоча кнопка</button>
         </div>

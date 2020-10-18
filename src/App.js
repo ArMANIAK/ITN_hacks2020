@@ -20,7 +20,7 @@ function App() {
           <button><span></span>UserName</button>
         </div>
       </header>
-      {/* <Profile /> */}
+      <Profile />
       <Tester />
     </div>
   );

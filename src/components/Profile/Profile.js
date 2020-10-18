@@ -45,7 +45,7 @@ const Profile = () => {
             { axisX: 'Kyiv', axisY: 54 },
             { axisX: 'Kharkiv', axisY: 30 },
             { axisX: 'Chernihiv', axisY: 15 },
-            { axisX: 'Zaporizhzhia', axisY: 11 },
+            { axisX: 'Zaporizhia', axisY: 11 },
         ]};
 
     const averageSalary = {
@@ -84,7 +84,7 @@ const Profile = () => {
                     <ul>
                         <li className="section-nav-text">Платформа</li>
                         <li className="section-nav-text">Профіль</li>
-                        <li className="section-nav-text">Компания</li>
+                        <li className="section-nav-text">Компанія</li>
                     </ul>
                 </nav>
                 <main className="container">
