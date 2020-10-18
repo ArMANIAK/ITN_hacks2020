@@ -1,0 +1,55 @@
+.title {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.container-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.section-info {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* container-button */
+.container-button {
+    display: flex;
+    justify-content: center;
+}
+.container-lang {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+.btn-text {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.btn {
+    font-size: 18px;
+    font-weight: 400;
+    background: transparent;
+    color: black;
+    padding: 15px 70px;
+    margin-bottom: 3px;
+}
+.btn:hover {
+    background: #CAAC2A;
+}
+
+/* container-prof */
+.container-prof {
+    display: flex;
+    flex-direction: column;
+}
+.btn-submit {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 14px;
+    padding: 7px 70px;
+    background: #FFEFAF;
+}
