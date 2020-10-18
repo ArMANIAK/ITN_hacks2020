@@ -3,7 +3,6 @@ import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from 'recharts';
 import './Profile.css';
-import Tester from '../Tester/Tester';
 
 const Profile = () => {
 
@@ -81,44 +80,42 @@ const Profile = () => {
         <div className="profile">
             <section className="section">
                 <h2 className="section-title">Аналітика</h2>
-                <nav class="section-nav">
+                <nav className="section-nav">
                     <ul>
-                        <li class="section-nav-text">Платформа</li>
-                        <li class="section-nav-text">Профіль</li>
-                        <li class="section-nav-text">Компания</li>
+                        <li className="section-nav-text">Платформа</li>
+                        <li className="section-nav-text">Профіль</li>
+                        <li className="section-nav-text">Компания</li>
                     </ul>
-                    
                 </nav>
-                <main class="container">
-                    <nav class="aside">
-                        <ul class="aside-ul">
-                            <li class="aside-li">
-                                <button class="aside-li-text" onClick = {() => setStats(vacancies)}>Нових вакансій</button>
+                <main className="container">
+                    <nav className="aside">
+                        <ul className="aside-ul">
+                            <li className="aside-li">
+                                <button className="aside-li-text" onClick = {() => setStats(vacancies)}>Нових вакансій</button>
                             </li>
-                            <li class="aside-li">
-                                <button class="aside-li-text" onClick = {() => setStats(geography)}>Географія вакансій</button>
+                            <li className="aside-li">
+                                <button className="aside-li-text" onClick = {() => setStats(geography)}>Географія вакансій</button>
                             </li>
-                            <li class="aside-li">
-                                <button class="aside-li-text" onClick = {() => setStats(averageSalary)}>Сeредня заробітна плата</button>
+                            <li className="aside-li">
+                                <button className="aside-li-text" onClick = {() => setStats(averageSalary)}>Сeредня заробітна плата</button>
                             </li>
-                            <li class="aside-li">
-                                <button class="aside-li-text" onClick = {() => setStats(activeUsers)}>Активних користувачів</button>
+                            <li className="aside-li">
+                                <button className="aside-li-text" onClick = {() => setStats(activeUsers)}>Активних користувачів</button>
                             </li>
                         </ul>
                     </nav>
-
-                    <main class="section">
-                        <nav class="section-nav">
-                            <ul class="nav-profile">
-                                <li class="nav-profile-item">День</li>
-                                <li class="nav-profile-item">Тиждень</li>
-                                <li class="nav-profile-item">Місяць</li>
-                                <li class="nav-profile-item">Рік</li>
+                    <main className="section">
+                        <nav className="section-nav">
+                            <ul className="nav-profile">
+                                <li className="nav-profile-item">День</li>
+                                <li className="nav-profile-item">Тиждень</li>
+                                <li className="nav-profile-item">Місяць</li>
+                                <li className="nav-profile-item">Рік</li>
                             </ul>
                             <input type="text" name="text" id="text" placeholder="Введіть міста через кому" disabled/>
                             <input type="date" name="date" id="date"/>
                         </nav>
-                        <div class="graphic">
+                        <div className="graphic">
                         <div style={{ width: '100%', height: '40vh' }}>
                             <h3 className="graphic-header">
                                 { stats.capture }
@@ -142,8 +139,6 @@ const Profile = () => {
                     </main>
                 </main>
             </section>
-
-            <Tester />
         </div>
     )
 }

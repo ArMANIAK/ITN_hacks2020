@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Profile from './components/Profile/Profile';
+import Tester from './components/Tester/Tester';
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
           <button><span></span>UserName</button>
         </div>
       </header>
-      <Profile />
+      {/* <Profile /> */}
+      <Tester />
     </div>
   );
 }
