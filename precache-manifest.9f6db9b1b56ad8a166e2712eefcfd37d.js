@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0cceb9ac1fc807b9d6a6f325fe557d2b",
+    "revision": "102f07bb512e1fd99503dbd8f8828231",
     "url": "/ITN_hacks2020/index.html"
   },
   {
-    "revision": "3fe65aa34aa52110e524",
-    "url": "/ITN_hacks2020/static/css/main.3884d5b8.chunk.css"
+    "revision": "e90a5b58ead8fb92bb74",
+    "url": "/ITN_hacks2020/static/css/main.3d972c4f.chunk.css"
   },
   {
-    "revision": "00eef8cc6332d3317931",
-    "url": "/ITN_hacks2020/static/js/2.74a6dff3.chunk.js"
+    "revision": "ed420cd85b34feb98470",
+    "url": "/ITN_hacks2020/static/js/2.7c0f37c0.chunk.js"
   },
   {
     "revision": "c83eaf460a8f55ef068d9679da1b7145",
-    "url": "/ITN_hacks2020/static/js/2.74a6dff3.chunk.js.LICENSE.txt"
+    "url": "/ITN_hacks2020/static/js/2.7c0f37c0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3fe65aa34aa52110e524",
-    "url": "/ITN_hacks2020/static/js/main.4859b6dc.chunk.js"
+    "revision": "e90a5b58ead8fb92bb74",
+    "url": "/ITN_hacks2020/static/js/main.8cc51e1f.chunk.js"
   },
   {
     "revision": "92c5ef30af8498fa03df",
