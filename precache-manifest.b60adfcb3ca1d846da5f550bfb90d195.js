@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "102f07bb512e1fd99503dbd8f8828231",
+    "revision": "cf7aa98c382e2521de1f2f6627a882f1",
     "url": "/ITN_hacks2020/index.html"
   },
   {
-    "revision": "e90a5b58ead8fb92bb74",
+    "revision": "8f7595eb7648aca7d534",
     "url": "/ITN_hacks2020/static/css/main.3d972c4f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ITN_hacks2020/static/js/2.7c0f37c0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e90a5b58ead8fb92bb74",
-    "url": "/ITN_hacks2020/static/js/main.8cc51e1f.chunk.js"
+    "revision": "8f7595eb7648aca7d534",
+    "url": "/ITN_hacks2020/static/js/main.ee5affdf.chunk.js"
   },
   {
     "revision": "92c5ef30af8498fa03df",

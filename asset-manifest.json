@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ITN_hacks2020/static/css/main.3d972c4f.chunk.css",
-    "main.js": "/ITN_hacks2020/static/js/main.8cc51e1f.chunk.js",
-    "main.js.map": "/ITN_hacks2020/static/js/main.8cc51e1f.chunk.js.map",
+    "main.js": "/ITN_hacks2020/static/js/main.ee5affdf.chunk.js",
+    "main.js.map": "/ITN_hacks2020/static/js/main.ee5affdf.chunk.js.map",
     "runtime-main.js": "/ITN_hacks2020/static/js/runtime-main.1d954994.js",
     "runtime-main.js.map": "/ITN_hacks2020/static/js/runtime-main.1d954994.js.map",
     "static/js/2.7c0f37c0.chunk.js": "/ITN_hacks2020/static/js/2.7c0f37c0.chunk.js",
     "static/js/2.7c0f37c0.chunk.js.map": "/ITN_hacks2020/static/js/2.7c0f37c0.chunk.js.map",
     "index.html": "/ITN_hacks2020/index.html",
-    "precache-manifest.9f6db9b1b56ad8a166e2712eefcfd37d.js": "/ITN_hacks2020/precache-manifest.9f6db9b1b56ad8a166e2712eefcfd37d.js",
+    "precache-manifest.b60adfcb3ca1d846da5f550bfb90d195.js": "/ITN_hacks2020/precache-manifest.b60adfcb3ca1d846da5f550bfb90d195.js",
     "service-worker.js": "/ITN_hacks2020/service-worker.js",
     "static/css/main.3d972c4f.chunk.css.map": "/ITN_hacks2020/static/css/main.3d972c4f.chunk.css.map",
     "static/js/2.7c0f37c0.chunk.js.LICENSE.txt": "/ITN_hacks2020/static/js/2.7c0f37c0.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.1d954994.js",
     "static/js/2.7c0f37c0.chunk.js",
     "static/css/main.3d972c4f.chunk.css",
-    "static/js/main.8cc51e1f.chunk.js"
+    "static/js/main.ee5affdf.chunk.js"
   ]
 }
