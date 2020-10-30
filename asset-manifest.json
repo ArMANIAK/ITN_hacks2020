@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ITN_HACKATON_2020-second-place-/static/css/main.bcbfd93e.chunk.css",
-    "main.js": "/ITN_HACKATON_2020-second-place-/static/js/main.fcdec8a0.chunk.js",
-    "main.js.map": "/ITN_HACKATON_2020-second-place-/static/js/main.fcdec8a0.chunk.js.map",
-    "runtime-main.js": "/ITN_HACKATON_2020-second-place-/static/js/runtime-main.bff3879f.js",
-    "runtime-main.js.map": "/ITN_HACKATON_2020-second-place-/static/js/runtime-main.bff3879f.js.map",
-    "static/js/2.7c0f37c0.chunk.js": "/ITN_HACKATON_2020-second-place-/static/js/2.7c0f37c0.chunk.js",
-    "static/js/2.7c0f37c0.chunk.js.map": "/ITN_HACKATON_2020-second-place-/static/js/2.7c0f37c0.chunk.js.map",
-    "index.html": "/ITN_HACKATON_2020-second-place-/index.html",
-    "precache-manifest.e2f6dc36b4a523c3e65d66295fc9e9dc.js": "/ITN_HACKATON_2020-second-place-/precache-manifest.e2f6dc36b4a523c3e65d66295fc9e9dc.js",
-    "service-worker.js": "/ITN_HACKATON_2020-second-place-/service-worker.js",
-    "static/css/main.bcbfd93e.chunk.css.map": "/ITN_HACKATON_2020-second-place-/static/css/main.bcbfd93e.chunk.css.map",
-    "static/js/2.7c0f37c0.chunk.js.LICENSE.txt": "/ITN_HACKATON_2020-second-place-/static/js/2.7c0f37c0.chunk.js.LICENSE.txt",
-    "static/media/BazaIT.svg": "/ITN_HACKATON_2020-second-place-/static/media/BazaIT.304e5212.svg"
+    "main.css": "/ITN_hacks2020/static/css/main.bcbfd93e.chunk.css",
+    "main.js": "/ITN_hacks2020/static/js/main.6b9625a7.chunk.js",
+    "main.js.map": "/ITN_hacks2020/static/js/main.6b9625a7.chunk.js.map",
+    "runtime-main.js": "/ITN_hacks2020/static/js/runtime-main.1d954994.js",
+    "runtime-main.js.map": "/ITN_hacks2020/static/js/runtime-main.1d954994.js.map",
+    "static/js/2.7c0f37c0.chunk.js": "/ITN_hacks2020/static/js/2.7c0f37c0.chunk.js",
+    "static/js/2.7c0f37c0.chunk.js.map": "/ITN_hacks2020/static/js/2.7c0f37c0.chunk.js.map",
+    "index.html": "/ITN_hacks2020/index.html",
+    "precache-manifest.1d27bb1892f757517c010c06ac32fce9.js": "/ITN_hacks2020/precache-manifest.1d27bb1892f757517c010c06ac32fce9.js",
+    "service-worker.js": "/ITN_hacks2020/service-worker.js",
+    "static/css/main.bcbfd93e.chunk.css.map": "/ITN_hacks2020/static/css/main.bcbfd93e.chunk.css.map",
+    "static/js/2.7c0f37c0.chunk.js.LICENSE.txt": "/ITN_hacks2020/static/js/2.7c0f37c0.chunk.js.LICENSE.txt",
+    "static/media/BazaIT.svg": "/ITN_hacks2020/static/media/BazaIT.304e5212.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bff3879f.js",
+    "static/js/runtime-main.1d954994.js",
     "static/js/2.7c0f37c0.chunk.js",
     "static/css/main.bcbfd93e.chunk.css",
-    "static/js/main.fcdec8a0.chunk.js"
+    "static/js/main.6b9625a7.chunk.js"
   ]
 }
