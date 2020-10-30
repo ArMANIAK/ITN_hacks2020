@@ -2,12 +2,11 @@
   "name": "baza_it",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://armaniak.github.io/ITN_hacks2020",
+  "homepage": "http://vladimir.github.io/ITN_HACKATON_2020-second-place-",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "gh-pages": "^3.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
@@ -35,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
